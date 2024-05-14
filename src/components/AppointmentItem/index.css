@@ -1,0 +1,59 @@
+.appointmentListItem {
+  border: 1px solid #ccc; /* Lighten border color */
+  border-radius: 10px; /* Increase border radius for softer curves */
+  padding: 10px 20px;
+  margin: 10px;
+  width: calc(
+    33.33% - 20px
+  ); /* For medium and large devices, 3 items in a row */
+  box-sizing: border-box;
+  height: auto;
+  list-style: none;
+}
+
+.titleAndFavouriteIconContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titleStyle {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.dateStyle {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Favorite button styles */
+.favBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Adjust the favorite button icon */
+.favIcon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+  .card {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+  .appointmentListItem {
+    width: calc(100% - 20px); /* For extra small devices, 1 item in a row */
+  }
+}
+
+@media (max-width: 479px) {
+  .appointmentListItem {
+    width: calc(100% - 20px); /* For extra small devices, 1 item in a row */
+  }
+}
